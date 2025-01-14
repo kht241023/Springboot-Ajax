@@ -1,8 +1,8 @@
 package com.kh.AjaxProject.service;
 
 
-import com.kh.AjaxProject.DTO.Member;
-import com.kh.AjaxProject.Mapper.MemberMapper;
+import com.kh.AjaxProject.dto.Member;
+import com.kh.AjaxProject.mapper.MemberMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,5 +1,5 @@
-package com.kh.AjaxProject.Mapper;
-import com.kh.AjaxProject.DTO.Member;
+package com.kh.AjaxProject.mapper;
+import com.kh.AjaxProject.dto.Member;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

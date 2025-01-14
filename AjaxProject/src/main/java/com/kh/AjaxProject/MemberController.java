@@ -1,7 +1,7 @@
 package com.kh.AjaxProject;
 
 
-import com.kh.AjaxProject.DTO.Member;
+import com.kh.AjaxProject.dto.Member;
 import com.kh.AjaxProject.service.MemberSerivce;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

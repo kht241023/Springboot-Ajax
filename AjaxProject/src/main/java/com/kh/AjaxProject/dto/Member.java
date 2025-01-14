@@ -1,4 +1,4 @@
-package com.kh.AjaxProject.DTO;
+package com.kh.AjaxProject.dto;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
