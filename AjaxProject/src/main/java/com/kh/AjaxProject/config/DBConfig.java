@@ -1,4 +1,4 @@
-package com.kh.AjaxProject.DBConfig;
+package com.kh.AjaxProject.config;
 
 
 
@@ -51,7 +51,7 @@ public class DBConfig {
         sessionFactoryBean.setMapperLocations(
                 applicationContext.getResources("classpath:/mappers/**.xml")  );
 
-        sessionFactoryBean.setTypeAliasesPackage("com.kh.AjaxProject.dto");
+        sessionFactoryBean.setTypeAliasesPackage("com.kh.AjaxProject");
 
         sessionFactoryBean.setConfigLocation(
                 applicationContext.getResource("classpath:mybatis-config.xml"));
