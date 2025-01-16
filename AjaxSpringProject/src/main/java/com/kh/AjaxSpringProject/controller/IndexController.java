@@ -25,4 +25,15 @@ public class IndexController {
         model.addAttribute("user",userService.getUserId(id));
         return "userInfo";
     }
+
+    @GetMapping("/get/avatar")
+    public String getAvatar(){
+        return "jqueryAjax/Avatar";
+    }
+
+    @GetMapping("/get/randomLogo")
+    public String getRandomLogo(){
+        return "jqueryAjax/randomLogo";
+    }
+
 }
