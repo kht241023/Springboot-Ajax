@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class IndexController {
@@ -18,13 +19,19 @@ public class IndexController {
         return "index";
     }
 
+
+
     // Ajax 와 별개로 /detail/원하는회원정보번호를 통해서
     // userInfo.html을 보여줄 수 있도록 설정하는 controller
-    @GetMapping("/detail/{id}")
-    public String detail(@PathVariable int id, Model model) {
-        model.addAttribute("user",userService.getUserId(id));
+    @GetMapping("/detail")
+    public String detail(@RequestParam("id") int id) {
         return "userInfo";
     }
+
+
+
+
+
 
     @GetMapping("/get/avatar")
     public String getAvatar(){
