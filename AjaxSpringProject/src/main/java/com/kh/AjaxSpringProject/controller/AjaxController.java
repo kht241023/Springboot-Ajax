@@ -49,13 +49,10 @@ public class AjaxController {
     }
 
 
-
-
     @GetMapping("/api/hello")
     public String hello() {
         return "hello";
     }
-
 
     @GetMapping("/api/data")
     public Map<String,String> data() {
