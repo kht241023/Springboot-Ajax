@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤 로고 생성하기</title>
+    <link rel="icon" href="/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="logo-container">
+    <img id="logo" src="">
+</div>
+<button id="btnLogo">로고 생성하기</button>
+
+<script>
+    function loadRandom() {
+        // fetch = ajax 특정 주소에서 데이터를 주고받는 기능
+        fetch('https://www.logotypes.dev/random')
+            .then(data => data.url) // img객체의 url 가져오기 img가 없을 경우 오류발생가능성 있음
+            .then(logoUrl => { // logoUrl = data.url 로 가져온 주소값이 담겨져 있음
+                $('.logo-container').html( $('<img>').attr('src', logoUrl));
+            })
+            .catch(error => {
+                // back 에서 데이터를 가지고오지 못하는 경우
+                // 이상이 생겼을 경우
+            }) ;
+    }
+    loadRandom();
+
+    const btnLogo = document.getElementById("btnLogo");
+
+      btnLogo("click",loadRandom );
+
+
+</script>
+</body>
+</html>

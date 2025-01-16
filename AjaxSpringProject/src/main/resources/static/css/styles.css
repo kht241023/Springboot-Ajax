@@ -2,7 +2,7 @@ body{
     text-align: center;
     margin: 20px;
 }
-.avatar-container{
+.avatar-container, .logo-container{
     margin: 20px auto;
     width: 150px;
     height: 150px;
