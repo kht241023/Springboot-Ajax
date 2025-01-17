@@ -34,8 +34,7 @@
                     if(data.length > 0) { //DB에서 컨트롤러로 전달받은 데이터가 1개 이상이라면
                         $.each(data,
                                 function (index, user) {
-                                     userInfo += `
-                                                            <p><a href="/detail?id=${user.id}"> ID : </a>${user.id}</p>
+                                     userInfo += `<p><a href="/detail?id=${user.id}"> ID : </a>${user.id}</p>
                                                             <p><strong> Nickname : </strong>${user.nickname}</p>
                                                             <p><strong> Name : </strong>${user.username}</p>
                                                             <p><strong> Email : </strong>${user.email}</p>
